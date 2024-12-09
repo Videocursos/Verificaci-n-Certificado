@@ -1,0 +1,223 @@
+<html><head><base href="/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c3363;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1c3363;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2196f3;
+}
+
+.cart-icon, .user-icon {
+    font-size: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.main-content {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.certificate-verification {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.verification-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.verification-header h1 {
+    color: #1c3363;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.verification-details {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.detail-item {
+    margin-bottom: 20px;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #1c3363;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+.verification-status {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.certificate-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.certificate-container {
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://videocursos.co/" class="logo">
+                    <img src="https://videocursos.co/wp-content/uploads/2018/09/cropped-favicon-3.png" alt="VideoCursos Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="https://videocursos.co/todos-los-cursos/">Categorías</a></li>
+                    <li><a href="https://videocursos.co/todos-los-cursos/">Cursos</a></li>
+                    <li>
+                        <a href="https://videocursos.co/carrito/">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                            Carrito
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://videocursos.co/mi-cuenta/">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                            </svg>
+                            Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="certificate-verification">
+                <div class="verification-header">
+                    <h1>Verificación de Certificado</h1>
+                    <p>Verifique la autenticidad del certificado a continuación</p>
+                </div>
+                <div class="verification-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Nombre del Alumno:</div>
+                        <div class="detail-value">SEBASTIAN ALEJANDRO DIAZ MACHADO</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Número de Identificación:</div>
+                        <div class="detail-value">7530780216-1491392761205969595</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Fecha de Emisión:</div>
+                        <div class="detail-value">18 de septiembre del 2024</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Certificado:</div>
+                        <div class="detail-value certificate-container">
+                            <img src="/Certificado de Reconocimiento Diploma Graduación Elegante Profesional Blanco y Dorado.png" alt="Certificado" class="certificate-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-status">
+                    ✓ Este certificado ha sido verificado y es auténtico
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
